@@ -1,5 +1,7 @@
 # Calculator
-Calculator with basic functionalities for study purposes of JS
+Calculator with basic functionalities for JS study purposes
+
+---
 
 In order to run the project:
 ```sh
