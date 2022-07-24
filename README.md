@@ -22,6 +22,7 @@ $ cd calculator
 So far, the following is working:
 - [x] Basic operations like Addition, Subtraction, Multiplication & Division
 - [x] Clear the visor
+- [x] Replaces the last operator with another
 
 
 
