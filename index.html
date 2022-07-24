@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini calculator</title>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="calculator">
+        <div class="visor">
+            <input type="text" data-js="visor" value="0" disabled>
+        </div>
+        
+        <div class="left-block">
+            <div class="top-buttons">
+                <button data-js="ac"> AC </button>
+                <button> +/- </button>
+                <button> % </button>
+            </div>
+           
+            <div id="digits" data-js="digits" >
+                <button value="7"> 7 </button>
+                <button value="8"> 8 </button>
+                <button value="9"> 9 </button>
+                <button value="4"> 4 </button>
+                <button value="5"> 5 </button>
+                <button value="6"> 6 </button>
+                <button value="1"> 1 </button>
+                <button value="2"> 2 </button>
+                <button value="3"> 3 </button>
+                <button value="0"> 0 </button>
+            </div>
+        </div>
+
+    
+        <div class="right-block">
+            <div data-js="operators" class="operators">
+                <button class="operator" value="+"> + </button>
+                <button class="operator" value="-"> - </button>
+                <button class="operator" value="*"> × </button>
+                <button class="operator" value="/"> / </button>
+                <button class="equal" data-js="equal"> = </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
