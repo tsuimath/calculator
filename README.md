@@ -15,11 +15,17 @@ $ cd calculator
 
 So far, the following is working:
 - [x] Basic operations like Addition, Subtraction, Multiplication & Division
-- [x] Clean the visor
+- [x] Clear the visor
 
 
 
-### Unsuported Features
+### Not working yet
 
+- [ ] Type on keyboard
 - [ ] Button +/-
 - [ ] Button % (Mod)
+- [ ] Operations with Multiplication and Division
+- [ ] Show the entire calculation
+- [ ] Show result above the calculation
+
+
