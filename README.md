@@ -7,8 +7,6 @@ Calculator with basic functionalities for JS study purposes
 
 ![](preview.gif)
 
----
-
 In order to run the project:
 ```sh
 $ git clone git@github.com:tsutsuimath/calculator.git calculator
@@ -23,7 +21,6 @@ So far, the following is working:
 - [x] Basic operations like Addition, Subtraction, Multiplication & Division
 - [x] Clear the visor
 - [x] Replaces the last operator with another
-
 
 
 ### Not working yet
