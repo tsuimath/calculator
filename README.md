@@ -11,6 +11,8 @@ In order to run the project:
 ```sh
 $ git clone git@github.com:tsutsuimath/calculator.git calculator
 $ cd calculator
+$ npm install serve
+$ npx serve
 ```
 
 ---
