@@ -6,6 +6,7 @@ Calculator with basic functionalities for JS study purposes
 ## Preview
 
 ![](preview.gif)
+[Demo](https://tsutsuimath.github.io/calculator/)
 
 In order to run the project:
 ```sh
