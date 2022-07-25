@@ -1,13 +1,13 @@
 let listeners = []
 
+function addListener(eventFunction) {
+    listeners.push(eventFunction)
+}
+
 function triggerListeners(event) {
     listeners.forEach(function(listener){
         listener(event.target.value)
     })
-}
-
-function addListener(eventFunction) {
-    listeners.push(eventFunction)
 }
 
 function createMouseEvents() {
