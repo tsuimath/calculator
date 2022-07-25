@@ -10,7 +10,7 @@
 <body>
     <div id="calculator">
         <div class="visor">
-            <input type="text" data-js="visor" value="0" disabled>
+            <input type="text" data-js="visor" value="0" readonly>
         </div>
         
         <div class="left-block">
@@ -46,6 +46,12 @@
         </div>
     </div>
 
-    <script src="./calculator.js"></script>
+    <!-- <script src="./calculator.js"></script> -->
+
+    <script type="module">
+        import screen from './screen.js'
+        
+        screen.init()
+    </script>
 </body>
 </html>
