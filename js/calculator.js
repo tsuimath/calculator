@@ -4,15 +4,19 @@ function isOperator(entry) {
     }
 }
 
-function operate(firstValue, lastValue, lastOperator, operator) {
+function doOperation(firstValue, lastValue, operator) {
     let operatorSelected = {
-        '+': function() { return ( parseFloat(firstValue) + parseFloat(lastValue) ) + lastOperator },
-        '-': function() { return ( parseFloat(firstValue) - parseFloat(lastValue) ) + lastOperator },
-        '*': function() { return ( parseFloat(firstValue) * parseFloat(lastValue) ) + lastOperator },
-        '/': function() { return ( parseFloat(firstValue) / parseFloat(lastValue) ) + lastOperator }
+        '+': function() { return  parseFloat(firstValue) + parseFloat(lastValue) },
+        '-': function() { return  parseFloat(firstValue) - parseFloat(lastValue) },
+        '*': function() { return  parseFloat(firstValue) * parseFloat(lastValue) },
+        '/': function() { return  parseFloat(firstValue) / parseFloat(lastValue) }
     }
 
     return operatorSelected[operator]()
+}
+
+function getLastOperator(value) {
+    return isOperator(value) ? value.split('').pop() : ''
 }
 
 function calculate(value) {
@@ -20,7 +24,7 @@ function calculate(value) {
     
     let result = allValues.reduce(function(accumulated, currentValue){
         let operator = accumulated.split('').pop()
-        let lastOperator = isOperator(currentValue) ? currentValue.split('').pop() : ''
+        let lastOperator = getLastOperator(currentValue)
         
         let firstValue = accumulated.slice(0, -1),
             lastValue = currentValue
@@ -29,7 +33,7 @@ function calculate(value) {
             lastValue = currentValue.slice(0, -1)
         }
 
-        return operate(firstValue, lastValue, lastOperator, operator)
+        return doOperation(firstValue, lastValue, operator) + lastOperator
     })
     
     return result
